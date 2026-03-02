@@ -11,7 +11,8 @@
     "lint:fix": "ng lint --fix",
     "prettier:format": "prettier --write \"src/**/*.{ts,html,css,scss,json}\"",
     "prettier:check": "prettier --check \"src/**/*.{ts,html,css,scss,json}\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "commit": "cz"
   },
   "private": true,
   "packageManager": "npm@11.9.0",
@@ -30,6 +31,8 @@
     "@angular/cli": "^21.2.0",
     "@angular/compiler-cli": "^21.2.0",
     "angular-eslint": "21.2.0",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
@@ -46,5 +49,10 @@
       "prettier --write",
       "eslint --fix"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
